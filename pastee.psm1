@@ -30,7 +30,7 @@ Function New-Paste {
     if ($Description) {
         $Description = [uri]::EscapeDataString($Description)
     }
-    $Params = "key=$ApiKey&description=$Description&language=$Language&paste=$Paste&format=$Format&encrypted=$Encrypted&expire=$Expire"
+    $Params = "apikey=$ApiKey&description=$Description&language=$Language&paste=$Paste&format=$Format&encrypted=$Encrypted&expire=$Expire"
 
     $errors = @{
         error_no_key = 'No Key present'

